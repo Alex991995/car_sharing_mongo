@@ -64,7 +64,7 @@ const carSchema = new Schema(
       ref: 'Run',
     },
   },
-  { timestamps: true, toJSON: { getters: true } },
+  { timestamps: true, toJSON: { getters: true }, id: false},
 );
 
 module.exports = model('Car', carSchema);
